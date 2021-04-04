@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RelatimeDatabase">
-        <activity android:name=".UpdateData">
+        <activity android:name=".DeleteData">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,10 +18,11 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".ReadData">
+        <activity android:name=".UpdateData"></activity>
+        <activity android:name=".ReadData"></activity>
+        <activity android:name=".MainActivity">
 
         </activity>
-        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
