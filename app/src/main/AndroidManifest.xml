@@ -10,11 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RelatimeDatabase">
         <activity android:name=".UpdateData">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".ReadData">
 

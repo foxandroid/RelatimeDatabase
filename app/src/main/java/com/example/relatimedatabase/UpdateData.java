@@ -31,23 +31,24 @@ public class UpdateData extends AppCompatActivity {
             public void onClick(View v) {
 
                 String userName = binding.userName.getText().toString();
-                String fisrtName = binding.firstName.getText().toString();
+                String firstName = binding.firstName.getText().toString();
                 String lastName = binding.lastname.getText().toString();
                 String age = binding.age.getText().toString();
 
-                    updatedata(userName,fisrtName,lastName,age);
+                updateData(userName,firstName,lastName,age);
 
-                }
-
+            }
         });
+
     }
 
-    private void updatedata(String userName, String firstName, String lastName, String age) {
+    private void updateData(String userName, String firstName, String lastName, String age) {
 
         HashMap User = new HashMap();
         User.put("firstName",firstName);
         User.put("lastName",lastName);
         User.put("age",age);
+
         databaseReference = FirebaseDatabase.getInstance().getReference("Users");
         databaseReference.child(userName).updateChildren(User).addOnCompleteListener(new OnCompleteListener() {
             @Override
@@ -59,7 +60,7 @@ public class UpdateData extends AppCompatActivity {
                     binding.firstName.setText("");
                     binding.lastname.setText("");
                     binding.age.setText("");
-                    Toast.makeText(UpdateData.this,"Successfully Updated",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(UpdateData.this,"Successfuly Updated",Toast.LENGTH_SHORT).show();
 
                 }else {
 
