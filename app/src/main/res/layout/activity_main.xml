@@ -84,14 +84,27 @@
 
         <Button
             android:id="@+id/registerBtn"
-            android:layout_width="360dp"
+            android:layout_width="280dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="612dp"
             android:backgroundTint="@color/teal_200"
-            android:text="Login"
+            android:text="Insert Data"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.229"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/readdataPage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="612dp"
+            android:backgroundTint="@color/teal_200"
+            android:background="@drawable/baseline_cloud_download_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/registerBtn"
             app:layout_constraintTop_toTopOf="parent" />
 
 

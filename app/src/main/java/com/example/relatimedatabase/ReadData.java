@@ -4,8 +4,10 @@ package com.example.relatimedatabase;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.relatimedatabase.databinding.ActivityReadDataBinding;
@@ -15,8 +17,9 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-
 public class ReadData extends AppCompatActivity {
+
+    Button insertData;
 
     ActivityReadDataBinding binding;
     DatabaseReference reference;
@@ -27,6 +30,15 @@ public class ReadData extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityReadDataBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        insertData = findViewById(R.id.insertData);
+        insertData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openinsertDatapage();
+            }
+        });
+
         binding.readdataBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,6 +55,11 @@ public class ReadData extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void openinsertDatapage() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     private void readData(String username) {
