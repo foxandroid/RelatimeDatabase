@@ -3,6 +3,7 @@ package com.example.relatimedatabase;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,11 +23,23 @@ public class MainActivity extends AppCompatActivity {
     FirebaseDatabase db;
     DatabaseReference reference;
 
+    Button readdataPage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        readdataPage = findViewById(R.id.readdataPage);
+        readdataPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReaddatapage();
+            }
+        });
+
+
 
         binding.registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,5 +73,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void openReaddatapage() {
+        Intent intent = new Intent(this, ReadData.class);
+        startActivity(intent);
     }
 }

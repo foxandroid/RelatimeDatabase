@@ -1,33 +1,70 @@
 {
   "project_info": {
-    "project_number": "317372142110",
-    "project_id": "relatimedatabase-eee95",
-    "storage_bucket": "relatimedatabase-eee95.appspot.com"
+    "project_number": "505544137497",
+    "project_id": "realtime-database-search-name",
+    "storage_bucket": "realtime-database-search-name.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:317372142110:android:0e0b7b562acb93884a540f",
+        "mobilesdk_app_id": "1:505544137497:android:876b36f77b0369bb934388",
         "android_client_info": {
           "package_name": "com.example.relatimedatabase"
         }
       },
       "oauth_client": [
         {
-          "client_id": "317372142110-kn7ao84mhf6glmdtdtdh2t2ubbgnndj1.apps.googleusercontent.com",
+          "client_id": "505544137497-e8k2532720etfsq8d1bl2fs1jqku0pu8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.relatimedatabase",
+            "certificate_hash": "a31be69a9055e3a6a923364a713fcfa2cfb78275"
+          }
+        },
+        {
+          "client_id": "505544137497-r06a0ffkulv8eae8916b5rmvdn0elv5i.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDohCuro_SyBBSUBxKq-90i5jADH1N-D9U"
+          "current_key": "AIzaSyChQyBrX1EI49lXFYiEO5zRFEC-3hdVoDs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "317372142110-kn7ao84mhf6glmdtdtdh2t2ubbgnndj1.apps.googleusercontent.com",
+              "client_id": "505544137497-r06a0ffkulv8eae8916b5rmvdn0elv5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505544137497:android:ac3e1fb0a363ad71934388",
+        "android_client_info": {
+          "package_name": "com.mrravipande.emanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505544137497-r06a0ffkulv8eae8916b5rmvdn0elv5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChQyBrX1EI49lXFYiEO5zRFEC-3hdVoDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505544137497-r06a0ffkulv8eae8916b5rmvdn0elv5i.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -49,15 +49,27 @@
 
         <Button
             android:id="@+id/readdataBtn"
-            android:layout_width="360dp"
+            android:layout_width="280dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="356dp"
             android:backgroundTint="@color/teal_200"
             android:text="READ DATA"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintHorizontal_bias="0.234"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/insertData"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="356dp"
+            android:background="@drawable/baseline_upload_24"
+            android:backgroundTint="@color/teal_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/readdataBtn"
             app:layout_constraintTop_toTopOf="parent" />
 
         <View
